@@ -3,9 +3,9 @@ pipeline {
 		label "slave"
 	}
 	stages {
-		stage("first"){
+		stage("git"){
  			steps {
-				echo "hii IAM first step"
+				git 'https://github.com/ravimalvia/helloworld.git'
 			}
 
 		}
