@@ -3,15 +3,15 @@ pipeline {
 		label "slave"
 	}
 	stages {
-		stage("git"){
+		stage("Git downlaod step"){
  			steps {
 				git 'https://github.com/ravimalvia/helloworld.git'
 			}
 
 		}
-		stage("second"){
+		stage("Build Step"){
 			steps {
-				echo "HII iam second step"
+				sh 'mvn clean package'
 			}
 		
 		}
