@@ -1,2 +1,2 @@
 @Library('Shared-library') _
-reactJsPipeline 'https://github.com/ravimalvia/react-docker.git'
+mavenJarPipeline 'https://github.com/ravimalvia/jenkins-docker-maven-java-webapp-1.git'
